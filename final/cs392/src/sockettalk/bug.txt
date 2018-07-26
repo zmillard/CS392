@@ -1,0 +1,26 @@
+Zoe Millard
+"I pledge my honor that I have abided by the Stevens Honor System."-ZM
+
+I have two programs to submit. I have a regular client that contains client without
+ncurses to prove it works, and then client with ncurses.
+
+Ncurses literally looks like shit and I just was able to get socket_talk working today
+(after working from roughly 10am-2am every day since classes ended) and also working
+on socket_talk when it was first assigned. 
+ 
+with socket_talk:
+For the longest time (2 full days) I had an error where it would only print one
+message from a user then when you tried to send a second message it would stop 
+acknoledging a message had been sent. This was very challenging to solve and I thought
+it was happening in my FD_ISSET. Finally I figured out it was actually an error in
+where I placed my FD_ISSET - it was in a loop that it shouldn't have been in.
+
+This was my major error that I remember but there were a multitude of others along
+the way.
+
+with ncurses:
+Bug #1: When you type a letter, it breaks.
+it does print in multiple colors but the input is unreadable(sorry).
+
+I legit finished socket_talk like 2 hours ago so I was not able to do any further 
+debugging.
